@@ -1,0 +1,100 @@
+:root {
+    --bg: #FFF3E0;
+    --primary: #C45A36;
+    --secondary: #B25233;
+    --text: #333;
+    --surface: #fff;
+    --radius: 8px;
+    --font-sans: "Open Sans", sans-serif;
+    --font-serif: "Playfair Display", serif;
+  }
+  body {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+  }
+  header {
+    width: 100%;
+    background: var(--surface);
+    padding: 1rem 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .2s;
+  }
+  nav a:hover {
+    color: var(--secondary);
+  }
+  h1 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--primary);
+    margin: 2rem 0 .5rem;
+  }
+  h2, h3 {
+    font-family: var(--font-serif);
+    text-align: center;
+    color: var(--secondary);
+    margin: .5rem 0 1.5rem;
+  }
+  .main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+  }
+  .section {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  button {
+    font-family: var(--font-sans);
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+    margin: 1rem 0;
+  }
+  button:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+  }
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+    transition: color .2s;
+  }
+  a:hover {
+    color: var(--secondary);
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .875rem;
+    color: var(--text);
+    margin-top: 2rem;
+  }
